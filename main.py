@@ -1,12 +1,6 @@
 import random, sys, time, os
-from termcolor import cprint 
-from pyfiglet import figlet_format
 def pause(delay):
     time.sleep(delay)
-def b(text, color='white', font='5lineoblique'):
-    cprint(figlet_format(str(text),str(font)),str(color))
-    p(".wav", "default", "instant", True)
-#cybermedium, doom, starwars; block; larry3d, isometric1; 5lineoblique
 def p(text, color = "default", type = "null", noline = False):
     if color == "red" or color == "r":
         text = "\033[1;31;48m" + text + "\033[1;37;48m"
